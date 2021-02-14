@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/tools.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e78230314.js" crossorigin="anonymous"></script>
+    <title>Bracket Validator</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1 class="navbar-brand" ><a href="../index.html">Tsukinome</a></h1>
+            <div id="bracket-nav-toggler" class="nav-toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id = "bracket-collapse" class="collapse">
+                <ul class="navbar-nav">
+                    <div class="dropdown-container">
+                    <li id = "bracket-tool-toggler" class="nav-items">Tools</li>
+                    <div id="bracket-tool-dropdown" class="tools-dropdown">
+                        <a href="./converter.html" class="dropdown-items">Infix to postfix</a>
+                        <a href="./bracket.html" class="dropdown-items">Bracket validator</a>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div id="bracket-container" class="container">
+            <div class="content">
+                <h1 class="title">Bracket pair validator</h1>
+                <div class="example">
+                    <p class="notation-tag">Valid pair: <span class="notation-example">[ { ( ) } ]</span></p>
+                    <p class="notation-tag">Invalid pair: <span class="notation-example">[ { ] ( } )</span></p>
+                </div>
+                <div class="notation-link">
+                    <p class="notation-link-tag">To know more click on the link below</p>
+                    <div class="link-container">
+                        <a class="link" href="https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/">Valid paranthesis</a>
+                    </div>
+                </div>
+                    <p class="input-tag">Enter the expression below:</p>
+                    <form id="bracket-form" class="input-form bracket-form">
+                        <input type="text" id="bracket-input" class="input" />
+                    </form>
+                    <div id="bracket-icon" class="icon">
+                        <i class="fas fa-arrow-right"></i>
+                        </div>
+                    <h1 id="bracket-result" class="result"></h1>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/stack.js"></script>
+    <script src="scripts/checker.js"></script>
+    <script src="scripts/bracketApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Tsukinome</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1 class="navbar-brand" ><a href="./index.html">Tsukinome</a></h1>
+            <div id="index-nav-toggler" class="nav-toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id = "index-collapse" class="collapse">
+                <ul class="navbar-nav">
+                    <div class="dropdown-container">
+                    <li id = "index-tool-toggler" class="nav-items">Tools</li>
+                    <div id="index-tool-dropdown" class="tools-dropdown">
+                        <a href=".html/converter.html" class="dropdown-items">Infix to postfix</a>
+                        <a href="./html/bracket.html" class="dropdown-items">Bracket validator</a>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div id="index-container" class="container">
+            <div class="content">
+                <h1 class="title">Project Tsukinome</h1>
+                <div class="description">
+                <p>A simple website that implements data structures.</p>
+                <p class="check">Check out the tools menu to see the data structures in action.</p>
+                </div>
+                <div class="second-description">
+                    <p>This project is made using only <span>HTML</span><span> , CSS</span>
+                    and <span>Vanilla JavaScript</span>.
+                    </p>
+                    <p class="repo">Github repo - <span><a href="#">here</a></span></p>
+                    <p class="psp">P.S. - <span>"Project Tsukinome"</span> is a term from <span><a href="https://naruto.fandom.com/wiki/Narutopedia">Naruto Shippuden</a></span></p>
+                </div>
+                <div class="author-container">
+                <h2 class="author">Made by <span><a href="#">Mayank</a></span></h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/stack.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/tools.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e78230314.js" crossorigin="anonymous"></script>
+    <title>Notation converter</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1 class="navbar-brand" ><a href="../index.html">Tsukinome</a></h1>
+            <div id="converter-nav-toggler" class="nav-toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id = "converter-collapse" class="collapse">
+                <ul class="navbar-nav">
+                    <div class="dropdown-container">
+                    <li id = "converter-tool-toggler" class="nav-items">Tools</li>
+                    <div id="converter-tool-dropdown" class="tools-dropdown">
+                        <a href="./converter.html" class="dropdown-items">Infix to postfix</a>
+                        <a href="./bracket.html" class="dropdown-items">Bracket validator</a>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div id="converter-container" class="container">
+            <div class="content">
+                <h1 class="title">Infix to Postfix Converter</h1>
+                <div class="example">
+                    <p class="notation-tag">Infix notation: <span class="notation-example">A+B*C-D</span></p>
+                    <p class="notation-tag">Postfix notation: <span class="notation-example">A+B*C-D</span></p>
+                </div>
+                <div class="notation-link">
+                    <p class="notation-link-tag">To know more click on the links below</p>
+                    <div class="link-container">
+                        <a class="link" href="https://en.wikipedia.org/wiki/Infix_notation">Infix notation</a>
+                        <a class="link" href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Postfix notation</a>
+                    </div>
+                </div>
+                    <p class="input-tag">Enter the expression below:</p>
+                    <form id="converter-form" class="input-form">
+                        <input type="text" class="input" id="converter-input" />
+                    </form>
+                    <div id="converter-icon" class="icon">
+                    <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <h1 id="converter-result" class="result"></h1>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/stack.js"></script>
+    <script src="scripts/converter.js"></script>
+    <script src="scripts/converterApp.js"></script>
+</body>
+</html>
