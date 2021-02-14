@@ -13,6 +13,25 @@
     <main>
         <nav>
             <h1 class="navbar-brand" ><a href="../index.html">Tsukinome</a></h1>
+            <div id="converter-nav-toggler" class="nav-toggler">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id = "converter-collapse" class="collapse">
+                <ul class="navbar-nav">
+                    <div class="dropdown-container">
+                    <li id = "converter-tool-toggler" class="nav-items">Tools</li>
+                    <div id="converter-tool-dropdown" class="tools-dropdown">
+                        <a href="./converter.html" class="dropdown-items">Infix to postfix</a>
+                        <a href="./bracket.html" class="dropdown-items">Bracket validator</a>
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <h1 class="navbar-brand" ><a href="../index.html">Tsukinome</a></h1>
             <div id="bracket-nav-toggler" class="nav-toggler">
                 <div></div>
                 <div></div>
@@ -54,8 +73,8 @@
             </div>
         </div>
     </main>
-    <script src="scripts/stack.js"></script>
-    <script src="scripts/checker.js"></script>
-    <script src="scripts/bracketApp.js"></script>
+    <script src="../scripts/stack.js"></script>
+    <script src="../scripts/checker.js"></script>
+    <script src="../scripts/bracketApp.js"></script>
 </body>
 </html>
